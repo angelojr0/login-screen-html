@@ -23,28 +23,31 @@
                 <h1>Login</h1>
                 <p>Welcome back. Please insert your account and password to login.</p>
                 <form action="login.php" method="post">
-                    <span class="material-symbols-outlined" >person</span>
-                    <input 
-                        id="iName" 
-                        type="name" 
-                        maxlength="20" 
-                        minlength="3"
-                        autocomplete="name"
-                        placeholder="Username"
-                        required
+                    <div class="inputDiv">
+                        <span class="material-symbols-outlined" >person</span>
+                        <input 
+                            id="iName" 
+                            type="name" 
+                            maxlength="20" 
+                            minlength="3"
+                            autocomplete="name"
+                            placeholder="Username"
+                            required
+                            /> 
+                    </div>
+                    <div class="inputDiv">
+                        <span class="material-symbols-outlined" >key</span>
+                        <input 
+                            id="iPassword" 
+                            type="password" 
+                            maxlength="20" 
+                            minlength="3"
+                            autocomplete="current-password"
+                            placeholder="Password"
+                            required
                         /> 
-                        <br/>
-                    <span class="material-symbols-outlined" >key</span>
-                    <input 
-                        id="iPassword" 
-                        type="password" 
-                        maxlength="20" 
-                        minlength="3"
-                        autocomplete="current-password"
-                        placeholder="Password"
-                        required
-                    /> 
-                        <br/>
+                       
+                    </div> 
                     <input id="iButton" type="submit" value="Login" />
                 </form>
             </div>
