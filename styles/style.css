@@ -5,6 +5,7 @@
     --dark1: #202B75;
     --light1: #8D9BF7;
     --dark2: #810FFF;
+    --hover: #d4e7eeee;
 }
 
 * {
@@ -16,8 +17,8 @@
 
 body, html {
     background-color: var(--mainColor);
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
 }
 
 main {
@@ -35,8 +36,8 @@ section#login {
 
     background-color: var(--light1);
     color: white;
-    width: 250px;
-    height: 540px;
+    min-width: 250px;
+    min-height: 540px;
     border-radius: 20px ;
 
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
@@ -56,5 +57,44 @@ section#login > div#formDiv  {
 }
 
 section#login > div#formDiv > h1 {
+    padding: 16px;
+}
+
+section#login > div#formDiv > h1, p {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+section#login > div#formDiv > form {
     padding-top: 20px;
+}
+
+section#login > div#formDiv > form > input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+section#login > div#formDiv > form > input:focus {
+    background-color: var(--hover);
+    outline: none;
+}
+
+section#login > div#formDiv > form > label {
+    display: block;
+}
+
+section#login > div#formDiv > form > span {
+    color: black;
+    position: absolute;
+    left: 17%;
+    margin-top: 2px;
+}
+
+section#login > div#formDiv > form > input:hover {
+    background-color: var(--hover);
 }
